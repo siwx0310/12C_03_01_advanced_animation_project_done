@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,700&display=swap"
+        rel="stylesheet">
+    <title>Astro Candle</title>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <!-- Burgermenu -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <!-- Menupunkter -->
+            <div class="nav_links">
+                <li><a href="landing.html">Landing page</a></li>
+                <li><a href="scrolling.html">Scrolling page</a></li>
+                <li><a href="configurator.html">Candle Configurator</a></li>
+                <div class="burger_logo">
+                    <img src="images/light_logo.png">
+                </div>
+            </div>
+        </nav>
+        <div class="logo">
+            <img class="logo_circle" src="images/logo.png">
+            <img class="logo_text" src="images/logo-text.png">
+        </div>
+    </header>
+
+    <main>
+        <div id="bg_landing">
+            <div class="inner">
+                <div class="candle_trio"><img src="images/candle_trio.png"></div>
+                <div class="content">
+                    <h1>We make candles</h1>
+                    <p>Put together a gift box for the perfect<br> personalised gift for someone you love.</p>
+                    <a href="scrolling.html"><button> Get started now</button></a>
+                </div>
+            </div>
+            <div class="zodiac_signs">
+                <img id="zodiac_1" src="images/zodiac1.png">
+                <img id="zodiac_2" src="images/zodiac2.png">
+                <img id="zodiac_3" src="images/zodiac3.png">
+                <img id="zodiac_4" src="images/zodiac4.png">
+                <img id="zodiac_5" src="images/zodiac5.png">
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", init);
+
+        function init() {
+            dropDownMenu();
+        }
+
+        /* navigation menu / burger menu */
+        function dropDownMenu() {
+            // JavaScript der styrer burgermenu
+            let burger = document.querySelector(".burger");
+            let nav = document.querySelector(".nav_links");
+
+            // Lytter efter click på burgermenu
+            burger.addEventListener("click", () => {
+                // Viser/skjuler menuen
+                nav.classList.toggle("nav_active");
+                // Tilføjer/fjerner animation på burgermenu
+                burger.classList.toggle("toggle");
+            });
+            // Lytter efter klik på logo, og går til forsiden
+            document.querySelector(".logo").addEventListener("click", () => {
+                location.href = "landing.html";
+            });
+        }
+    </script>
+    <script src="js/landing_script.js"></script>
+</body>
+
+</html>

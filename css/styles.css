@@ -1,0 +1,1351 @@
+@font-face {
+  font-family: July It;
+  src: url(../fonts/Julyit.woff);
+}
+
+/* Styling af header og menuen */
+header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+
+  z-index: 1000;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  margin: 10px;
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+
+#bag {
+  margin: 10px;
+  margin-right: 50px;
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+.nav_links {
+  position: fixed;
+  height: 100vh;
+  top: 0px;
+  background-color: #000;
+  opacity: 0.8;
+  width: 20%;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+  overflow: hidden;
+  padding-top: 170px;
+  padding-left: 1rem;
+  text-align: left !important;
+  z-index: 900;
+  margin-left: -30px;
+}
+
+.nav_links li a {
+list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #f2e7da;
+  background-color: transparent !important;
+  text-align: left !important;
+  text-decoration: none;
+}
+
+.nav_links li a:hover {
+  filter: brightness(120%);
+  transition: 3s;
+}
+
+.nav_links li {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px;
+  z-index: 1000;
+  padding-left: 50px;
+  margin-left: -30px;
+}
+
+.toggle .burger {
+  display: block;
+}
+
+.burger div {
+  height: 2px;
+  background-color: black;
+  margin: 3px;
+  transition: all 0.4s ease;
+}
+
+.line1 {
+  width: 24px;
+}
+
+.line2 {
+  width: 24px;
+  margin: ;
+}
+
+.line3 {
+  width: 24px;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+  background-color: #f0f1f0;
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-6px, -7px);
+  background-color: #f0f1f0;
+  width: 24px;
+}
+
+.nav_active {
+  transform: translateX(0%);
+}
+
+@media only screen and (max-width: 480px){
+  .nav_links {
+
+    width: 80%;
+opacity: 0.9;
+  }
+  
+}
+
+.logo {
+  margin-top: -50px;
+  cursor: pointer;
+}
+
+.logo_circle {
+position: absolute;
+margin-top: 2px;
+}
+
+.logo_text {
+  position: absolute;
+}
+
+header {
+  height: 200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  font-weight: 300;
+}
+
+header {
+background: transparent;
+padding: 20px 20px;
+}
+
+.logo img {
+  width: 100px
+}
+
+.logo {
+  position: absolute;
+  right: 150px;
+}
+
+#typography .typo_subheading {
+  margin-top 100px !important;
+}
+
+#bg_landing {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(209,192,180);
+  background: linear-gradient(180deg, rgba(209,192,180,1) 0%, rgba(229,222,211,1) 100%);
+padding: 25px;
+padding-top: 200px;
+margin-top: 0px;
+}
+
+
+
+.candle_trio {
+  padding: 25px;
+}
+
+.candle_trio img {
+  width: 100%;
+}
+
+.content {
+  padding: 25px;
+  margin-top: 50px;
+}
+
+.content h1 {
+  margin-bottom: 30px;
+  margin-left: -8px;
+}
+
+.content p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+button {
+  cursor: pointer;
+}
+.content button {
+  padding: 15px 20px;
+  border: none;
+  background-color: #fff;
+}
+
+.content a button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0a0a0a;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+button:hover {
+  filter: brightness(120%);
+  transition: 2s;
+}
+
+#intro {
+  padding: 25px;
+  padding-bottom: 100px;
+  background-color: #f5f5f5;
+}
+
+#intro img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.intro_text {
+  margin-top: 40px;
+}
+
+.intro_handwritten {
+  font-family: 'July It', sans-serif;
+  font-weight: 100 !important;
+  font-size: 40px;
+  margin-top: -80px;
+  margin-left: 40px;
+  position: absolute;
+  letter-spacing: 5px;
+}
+
+#intro h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#intro p {
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+#intro button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+#intro button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0a0a0a;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#typography {
+  height: 110vh;
+  padding: 25px;
+  background-color: #191919;;
+  overflow-x: hidden;
+}
+
+.typo_left {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.typo_right {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+#typography p {
+  color: #f2e7da;
+  font-size: 20px;
+  text-align: center;
+}
+
+#candle_section {
+  padding: 25px;
+  text-align: center;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+#candle_section #box_candles img {
+  margin-top: -200px;
+  width: 100% !important;
+  margin-bottom: -50px;
+}
+
+#candle_section h2 {
+  margin-bottom: 25px;
+  font-family: 'July It', serif;
+  font-weight: 100;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+#candle_section p {
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+#candle_section img {
+  margin-bottom: 25px;
+}
+
+.candle_animations {
+  display: none
+}
+
+.candle_gif h3 {
+margin: 30px 0;
+}
+
+.zodiac_wrapper {
+  padding: 100px 0;
+  background-color: #191919;
+}
+
+#zodiac {
+  background-color: #191919;
+  padding: 50px 25px;
+}
+
+#zodiac img {
+  opacity: 0.9;
+}
+
+.zodiac_row {
+  margin-bottom: 150px !important;
+}
+
+#zodiac h3 {
+  color: #f2e7da;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+#zodiac h4 {
+  color: #f2e7da;
+  margin-bottom: 20px;
+}
+
+.zodiac_row {
+  margin-bottom: 40px;
+}
+
+#zodiac p {
+  color: #fff;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+#cta {
+  padding: 25px;
+  background-color: #f5f5f5;
+}
+
+#cta img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#cta h2 {
+  margin-bottom: 20px;
+}
+
+#cta p {
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+#cta button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+#cta button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0a0a0a;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cta_text {
+  margin-bottom: 50px;
+}
+
+.zodiac_signs {
+  display: none;
+}
+
+.intro_zodiac_signs {
+  display: none;
+}
+
+.candle_zodiac_signs {
+  display: none;
+}
+
+.cta_zodiac_signs {
+  display: none;
+}
+
+.candle_objects {
+  display: none;
+}
+
+.cta_inner {
+  padding: 50px 0;
+}
+
+#cta button {
+  margin-bottom: 45px;
+}
+
+.cta_handwritten {
+  position: absolute;
+  font-family: 'July It', serif;
+  font-weight: 300;
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin-top: 400px;
+  margin-left: 20px;
+}
+
+.typo_left {
+  font-size: 8em;
+  margin-bottom: 150px;
+  padding-top: 100px;
+  color: #f2e7da;
+}
+
+.typo_right {
+  text-align: right;
+  font-size: 8em;
+  margin-bottom: 30px;
+  color: #f2e7da;
+}
+
+  .candle_text_inner {
+    text-align: center !important;
+    padding-top: 50px;
+    padding-bottom: 100px !important;
+  }
+
+  #intro {
+    margin-top: -50px;
+    padding-top: 150px;
+  }
+
+  .logo img {
+    margin-top: -25px;
+    margin-left: 20px;
+  }
+
+  .svg_container {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 20px;
+  }
+  
+  .handwritten .mask {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+   }
+    
+   @keyframes strokeOffset {
+    to {
+      stroke-dashoffset: 0;
+    }
+   }
+    
+   #mask-s {
+    animation: strokeOffset 0.2s linear forwards;
+   }
+   #mask-c {
+    animation: strokeOffset 0.2s linear forwards 0.2s;
+   }
+   #mask-e {
+    animation: strokeOffset 0.2s linear forwards 0.4s;
+   }
+   #mask-n {
+    animation: strokeOffset 0.2s linear forwards 0.6s;
+   }
+   #mask-t-line {
+    animation: strokeOffset 0.2s linear forwards 0.8s;
+   }
+   #mask-t-other {
+    animation: strokeOffset 0.2s linear forwards 1s;
+   }
+   #mask-ee {
+    animation: strokeOffset 0.2s linear forwards 1.2s;
+   }
+   #mask-d {
+    animation: strokeOffset 0.2s linear forwards 1.4s;
+   }
+    
+   #mask-f {
+    animation: strokeOffset 0.2s linear forwards 1.6s;
+   }
+   #mask-o {
+    animation: strokeOffset 0.2s linear forwards 1.8s;
+   }
+   #mask-r {
+    animation: strokeOffset 0.2s linear forwards 2s;
+   }
+   #mask-y {
+    animation: strokeOffset 0.2s linear forwards 2.2s;
+   }
+   #mask-oo {
+    animation: strokeOffset 0.2s linear forwards 2.4s;
+   }
+   #mask-u {
+    animation: strokeOffset 0.2s linear forwards 2.6s;
+   }
+
+   .handwritten2 .mask2 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+@keyframes strokeOffset {
+to {
+stroke-dashoffset: 0;
+}
+}
+
+#mask2-m {
+animation: strokeOffset 0.2s linear forwards;
+}
+#mask2-ak-ak {
+animation: strokeOffset 0.2s linear forwards 0.2s;
+}
+#mask2-ak-line {
+animation: strokeOffset 0.2s linear forwards 0.4s;
+}
+#mask2-e {
+animation: strokeOffset 0.2s linear forwards 0.6s;
+}
+#mask2-y {
+animation: strokeOffset 0.2s linear forwards 0.8s;
+}
+#mask2-u {
+animation: strokeOffset 0.2s linear forwards 1s;
+}
+#mask2-o {
+animation: strokeOffset 0.2s linear forwards 1.2s;
+}
+#mask2-r {
+animation: strokeOffset 0.2s linear forwards 1.4s;
+}
+
+#mask2-oo {
+animation: strokeOffset 0.2s linear forwards 1.6s;
+}
+#mask2-w {
+animation: strokeOffset 0.2s linear forwards 1.8s;
+}
+#mask2-n {
+animation: strokeOffset 0.2s linear forwards 2s;
+}
+
+.handwritten3 .mask3 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+@keyframes strokeOffset {
+to {
+stroke-dashoffset: 0;
+}
+}
+
+#mask3-h {
+animation: strokeOffset 0.2s linear forwards;
+}
+#mask3-an {
+animation: strokeOffset 0.2s linear forwards 0.2s;
+}
+#mask3-d {
+animation: strokeOffset 0.2s linear forwards 0.4s;
+}
+#mask3-m {
+animation: strokeOffset 0.2s linear forwards 0.6s;
+}
+#mask3-a {
+animation: strokeOffset 0.2s linear forwards 0.8s;
+}
+#mask3-dd {
+animation: strokeOffset 0.2s linear forwards 1s;
+}
+#mask3-e {
+animation: strokeOffset 0.2s linear forwards 1.2s;
+}
+#mask3-s {
+animation: strokeOffset 0.2s linear forwards 1.4s;
+}
+
+#mask3-c {
+animation: strokeOffset 0.2s linear forwards 1.6s;
+}
+#mask3-ee {
+animation: strokeOffset 0.2s linear forwards 1.8s;
+}
+#mask3-n {
+animation: strokeOffset 0.2s linear forwards 2s;
+}
+#mask3-t-t {
+animation: strokeOffset 0.2s linear forwards 2.2s;
+}
+
+#mask3-t-line {
+animation: strokeOffset 0.2s linear forwards 2.4s;
+}
+#mask3-ss {
+animation: strokeOffset 0.2s linear forwards 2.6s;
+}
+   
+   .burger_logo {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+  }
+
+@media only screen and (min-width: 768px) {
+  .zodiac_signs {
+    display: block;
+    background-blend-mode: overlay;
+  }
+
+  .logo img {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  header {
+    display: block;
+  }
+
+  .intro_zodiac_signs {
+    display: block;
+    background-blend-mode: overlay;
+  }
+
+  .candle_zodiac_signs {
+    display: block;
+    background-blend-mode: overlay;
+  }
+
+  .cta_zodiac_signs {
+    display: block;
+    background-blend-mode: overlay;
+  }
+
+  .candle_text_inner {
+    text-align: center !important;
+    padding-top: 250px;
+    padding-bottom: 200px !important;
+  }
+
+.candle_objects {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+#object_1 {
+  width: 400px;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+
+#object_2 {
+  width: 180px;
+  position: absolute;
+  right: 150px;
+  top: 120px;
+}
+
+#object_3 {
+  width: 200px;
+  position: absolute;
+  left: -80px;
+  top: 400px;
+}
+
+#object_4 {
+  width: 400px;
+  position: absolute;
+  right: -180px;
+  top: 350px;
+}
+
+#object_5 {
+  width: 100px;
+  position: absolute;
+  left: 380px;
+  top: 450px;
+}
+
+#object_6 {
+  width: 190px;
+  position: absolute;
+  left: 280px;
+  top: 650px;
+}
+
+#object_7 {
+  width: 80px;
+  position: absolute;
+  right: 300px;
+  top: 700px;
+}
+
+#box_candles {
+  position: relative;
+}
+
+  #bg_landing #zodiac_1 {
+    position: absolute;
+    width: 500px;
+    top: 20%;
+    left: -1%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #bg_landing #zodiac_2 {
+    position: absolute;
+    width: 200px;
+    top: 40%;
+    right: 5%;
+    opacity: 0.1;
+    transform: rotate(20deg);
+    z-index: 0;
+  }
+
+  #bg_landing #zodiac_3 {
+    position: absolute;
+    width: 300px;
+    top: 10%;
+    right: 15%;
+    opacity: 0.1;
+    transform: rotate(0deg);
+    z-index: 0;
+  }
+
+  #bg_landing #zodiac_4 {
+    position: absolute;
+    width: 600px;
+    top: -15%;
+    transform: rotate(0deg);
+    left: 20%;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+.logo img {
+  width: 100px;
+}
+
+#bg_landing #zodiac_5 {
+    position: absolute;
+    width: 100px;
+    top: 65%;
+    transform: rotate(120deg);
+    left: 40%;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  #bg_landing .inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 5em;
+    margin-top: 100px !important;
+    z-index: 200;
+    position: relative;
+  }
+
+  .burger_logo {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+  }
+
+  #bg_landing h1 {
+    font-size: 50px;
+  }
+
+  .candle_trio {
+    text-align: left;
+    z-index: 100;
+  }
+
+  .candle_trio img {
+    width: 120%;
+    margin-left: -100px;
+  }
+
+  header {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  #bg_landing .inner {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+
+#intro {
+  margin-top: -50px;
+}
+
+#zodiac img {
+  margin-top: -20px;
+  width: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+  #intro .sectionwrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 0px;
+  }
+
+  #intro .intro_inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 5em;
+    margin-top: 50px !important;
+    padding-bottom: 50px;
+  }
+
+  #intro img {
+    width: 450px;
+    margin-bottom: 25px;
+  }
+
+  #intro .intro_handwritten {
+    margin: 0;
+    margin-top: 430px;
+    margin-left: 320px;
+    font-size: 50px;
+  }
+
+  .intro_text {
+    padding-top: 80px;
+  }
+
+  .typo_left {
+    font-size: 20em;
+    margin-bottom: 30px;
+  }
+  
+  .typo_right {
+    text-align: right;
+    font-size: 20em;
+    margin-bottom: 30px;
+  }
+
+.candle_inner {
+  padding-top: 150px;
+}
+
+  #candle_section .candle_animations img {
+    width: 100px !important;
+  }
+
+  .candle_text_inner {
+    padding: 0 700px;
+  }
+
+  #candle_section #box_candles img {
+    margin-top: -400px;
+    width: 700px !important;
+    margin-bottom: -50px;
+    margin-left: -30px;
+  }
+
+  #zodiac {
+    height: 70vh;
+    overflow-y: scroll;
+  }
+
+  .zodiac_inner {
+    width: 1100px;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .zodiac_row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 5em;
+    margin-top: 80px !important;
+    padding: 25px;
+  }
+
+  #zodiac {
+    padding: 50px 25px !important;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  #cta .sectionwrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+
+  .cta_inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 5em;
+    padding-top: 20px;
+    padding: 25px;
+  }
+
+  #cta img {
+    float: right;
+    width: 450px;
+    margin-bottom: 25px;
+  }
+
+  .cta_handwritten {
+    position: absolute;
+    font-family: 'July It', serif;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-left: 350px;
+    margin-top: 50px;
+    z-index: 100;
+  }
+
+  .cta_text {
+    padding-top: 180px;
+  }
+
+  #intro #zodiac_2 {
+    position: absolute;
+    width: 200px;
+    top: 10%;
+    left: 5%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #intro #zodiac_3 {
+    position: absolute;
+    width: 400px;
+    transform: rotate(360deg);
+    top: 5%;
+    right: 5%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #intro #zodiac_4 {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    right: 10%;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  #intro #zodiac_5 {
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 10%;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  #cta #zodiac_2 {
+    position: absolute;
+    width: 200px;
+    top: 10%;
+    left: 5%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #cta #zodiac_3 {
+    position: absolute;
+    width: 400px;
+    transform: rotate(360deg);
+    top: 5%;
+    right: 5%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #cta #zodiac_4 {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    right: 10%;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  #cta #zodiac_5 {
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 10%;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+.candle_zodiac_signs {
+  position: relative;
+}
+
+  #candle_section #zodiac_2-2 {
+    position: absolute;
+    width: 200px;
+    top: 500px;
+    left: 150px;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #candle_section #zodiac_3-2 {
+    position: absolute;
+    width: 300px;
+    transform: rotate(360deg);
+    top: 400px;
+    right: 5%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #candle_section #zodiac_4-2 {
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    right: 350px;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  #candle_section #zodiac_5-2 {
+    position: absolute;
+    width: 100px;
+    top: 100px;
+    left: 500px;
+    transform: rotate(50deg);
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  .cta_zodiac_signs {
+    position: relative;
+  }
+
+
+  #cta #zodiac_2-3 {
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    transform: rotate(330deg);
+    left: -305px;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #cta #zodiac_3-3 {
+    position: absolute;
+    width: 300px;
+    transform: rotate(100deg);
+    top: 400px;
+    right: 505px;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #cta #zodiac_4-3 {
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    right: -350px;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  #cta #zodiac_5-3 {
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 10%;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  .svg_container {
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 320px;
+  }
+  
+}
+
+/*  LOUISE EDIT - styling  */
+
+.configurator_description h1 {
+margin-bottom: 20px !important;
+}
+
+.configurator_description p {
+font-weight: 300;
+line-height: 30px;
+letter-spacing: 1px;
+}
+
+#first_candle,
+#second_candle,
+#third_candle,
+#fourth_candle  {
+width: 95px !important;
+text-align: center;
+display: inline-block;
+margin: 0;
+padding: 15px;
+color: #fff;
+background-color: #7A6C5D;
+}
+
+#options {
+overflow: hidden !important;
+margin-top: 150px;
+margin-bottom: 50px;
+}
+
+.candle_buttons {
+position: absolute;
+top: 30vh;
+z-index: 1000;
+margin-left: 2%;
+}
+
+button {
+border: none;
+}
+
+button:focus {
+border: none !important;
+}
+
+#first_candle,
+#second_candle,
+#third_candle,
+#fourth_candle:hover  {
+filter: none;
+}
+
+@media only screen and (max-width: 600px){
+  #options_together {
+    margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+  #first_candle,
+  #second_candle,
+  #third_candle,
+  #fourth_candle  {
+  width: 85px !important;
+  }
+
+  #selected_fragrances h3 {
+    display: none;
+  }
+
+  #zodiac img {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 385px){
+  #first_candle,
+  #second_candle,
+  #third_candle,
+  #fourth_candle  {
+  width: 75px !important;
+  }
+
+  #options {
+    margin-top: 20vh;
+  }
+}
+
+#handmadescents svg {
+width: 300px;
+position: absolute;
+margin-top: 370px;
+margin-left: 10px;
+z-index: 10;
+}
+
+
+@media only screen and (min-width: 1000px){
+  .candle_buttons {
+    position: absolute;
+    top: 490px;
+    z-index: 800;
+    margin-left: 25%;
+  }
+
+  .product_preview_container {
+    position: fixed;
+    z-index: 1;
+    left: 5vw;
+  }
+
+  #handmadescents {
+position: absolute;
+margin-top: -350px;
+margin-left: 370px;
+  }
+
+
+  #selected_fragrances h3 {
+
+  }
+
+  #options {
+    overflow: hidden !important;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    position: absolute;
+    right: 10vw;
+    }
+
+  #first_candle,
+  #second_candle,
+  #third_candle,
+  #fourth_candle  {
+    width: 120px !important;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .bg_split {
+    width: 60vw;
+    height: 100vh;
+    background-color: #eee;
+    position: fixed;
+    z-index: 0;
+    margin-top: -50px;
+  }
+}
+
+#container {
+  margin-top: 50px !important;
+}
+
+.product_description {
+  
+}
+
+.svg_handwritten {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 920px;
+  z-index: 900;
+}
+
+@media only screen and (max-width: 700px){
+  .svg_handwritten {
+    display: none;
+  }
+
+  .bg_split {
+    background-color: #eee;
+    position: absolute;
+    width: 100vw;
+    height: 58vh;
+    margin-top: -50px;
+  }
+}

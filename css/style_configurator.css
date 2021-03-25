@@ -1,0 +1,307 @@
+* {
+  margin: 0 auto;
+}
+
+/* Fonts */
+h1,
+h2,
+h3,
+p {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Buttons */
+button {
+  background-color: #eee;
+  border-radius: none;
+  border: none;
+  width: 95vw;
+  height: 80px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-left: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+@media only screen and (min-width: 1000px) {
+  button {
+    width: 450px;
+    margin-bottom: 2rem;
+  }
+}
+
+.color_btn {
+  cursor: pointer;
+}
+
+/* Conkfigurator img*/
+#Shadow_Billede {
+  pointer-events: none;
+}
+
+.g_to_interact_with {
+  fill: transparent;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+  #product_preview {
+    margin-right: 1rem;
+  }
+}
+
+/* big image of configurable candle*/
+#product_preview {
+  /*added*/
+  position: relative;
+  transition: opacity ease-in 0.5s;
+}
+
+@media only screen and (min-width: 1000px) {
+  #product_preview {
+    margin-right: 1rem;
+  }
+}
+
+#product_preview .zodiac_feature {
+  position: absolute;
+  width: 95vw;
+  margin-top: 0vh;
+  top: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  #product_preview .zodiac_feature {
+    width: 50vw;
+    top: -10vh;
+    margin-top: 10vh;
+  }
+}
+
+#candle {
+  position: relative;
+  background-color: #eee;
+  margin-top: 10vh;
+  width: 95vw;
+}
+
+@media only screen and (min-width: 1000px) {
+  #candle {
+    width: 50vw;
+  }
+}
+
+#selected_fragrances {
+  display: flex;
+  width: 75vw;
+  margin-top: -17%;
+  margin-left: 10%;
+  position: absolute;
+}
+
+@media only screen and (min-width: 1000px) {
+  #selected_fragrances {
+    position: absolute;
+    width: 40vw;
+    margin-top: -7%;
+  }
+}
+
+#selected_fragrances h3 {
+  font-size: 0.5rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1000px) {
+  #selected_fragrances h3 {
+    font-size: 0.9rem;
+  }
+}
+
+/* configurator container*/
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1000px) {
+  #container {
+    flex-direction: row;
+  }
+}
+
+/* Configurator options*/
+.configurator_description {
+  height: 15vh;
+  width: 80vw;
+  margin-bottom: 2rem;
+}
+
+.configurator_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .configurator_name {
+    margin-top: 20vh;
+  }
+
+  .configurator_description {
+    width: auto;
+    margin-bottom: 0 auto;
+  }
+}
+
+.configurator_name h1,
+.configurator_name h2 {
+  margin: 0;
+}
+
+#options {
+  background-color: white;
+  overflow-y: scroll;
+  /* height: 100vh; */
+}
+
+/* javacript classes*/
+.hide {
+  display: none;
+}
+
+/**/
+#dropdown_fragrance {
+  display: flex;
+  flex-direction: column;
+}
+
+.option_fragrance,
+.option_number,
+.option_zodiac {
+  width: 370px;
+  height: 40px;
+  padding-left: 30px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.button_number {
+  background-color: darkgray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-right: 40px;
+}
+
+#option_zodiac_choises,
+#option_fragrance_choises,
+#option_number_choises {
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+#option_zodiac_choises a,
+#option_fragrance_choises a,
+#option_number_choises a {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+}
+
+#option_zodiac_choises a:last-child,
+#option_fragrance_choises a:last-child,
+#option_number_choises a:last-child {
+  margin-bottom: 2rem;
+}
+
+/* hover for choises*/
+.choise {
+  background-color: #cfcfcf;
+}
+
+/* LOUISE EDIT */
+.option_fragrance,
+.option_number,
+.option_zodiac {
+  width: 150px;
+  height: 40px;
+  padding-left: 10px;
+  margin-top: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.first_section {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.second_section {
+  display: inline-block;
+}
+
+.first_choise {
+  background-color: darkgray;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-right: 40px;
+}
+
+#option_zodiac_choises,
+#option_fragrance_choises,
+#option_number_choises {
+  max-height: 350px;
+  overflow-y: scroll;
+  margin-top: 0px;
+}
+
+#option_zodiac_choises {
+  overflow-y: hidden;
+}
+
+#option_fragrance_choises {
+  overflow-y: hidden;
+  margin-left: -210px;
+}
+
+#option_zodiac_choises a,
+#option_fragrance_choises a,
+#option_number_choises a {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+}
+
+#option_zodiac_choises a:last-child,
+#option_fragrance_choises a:last-child,
+#option_number_choises a:last-child {
+  margin-bottom: 2rem;
+}
+
+/* hover for choises*/
+.choise {
+  background-color: #f5f5f5;
+}

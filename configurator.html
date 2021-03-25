@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro Candles | configurator</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style_configurator.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      header {
+        position: fixed;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg_split">
+      <div class="bg_split_column_1"></div>
+      <div class="bg_split_column_2"></div>
+    </div>
+    <div class="svg_handwritten">
+      <div id="makeyourown"></div>
+    </div>
+    <header>
+      <nav id="menu">
+        <!-- Burgermenu -->
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <!-- Menupunkter -->
+        <div class="nav_links">
+          <li><a href="landing.html">Landing page</a></li>
+          <li><a href="scrolling.html">Scrolling page</a></li>
+          <li><a href="configurator.html">Candle Configurator</a></li>
+          <div class="burger_logo">
+            <img src="images/light_logo.png" />
+          </div>
+        </div>
+      </nav>
+      <div class="logo">
+        <img class="logo_circle" src="images/logo.png" />
+        <img class="logo_text" src="images/logo-text.png" />
+      </div>
+    </header>
+    <main>
+      <div id="configurator">
+        <div id="container">
+          <div class="product_preview_container">
+            <div id="product_preview">
+              <!--LOUISE EDIT - LAGT DIV OM KNAP I SÆT-->
+              <div class="candle_buttons">
+                <button
+                  id="first_candle"
+                  class="button select_candle"
+                  data-feature="first_candle"
+                >
+                  1st Candle
+                </button>
+                <button
+                  id="second_candle"
+                  class="button select_candle"
+                  data-feature="second_candle"
+                >
+                  2nd Candle
+                </button>
+                <button
+                  id="third_candle"
+                  class="button select_candle"
+                  data-feature="third_candle"
+                >
+                  3rd Candle
+                </button>
+                <button
+                  id="fourth_candle"
+                  class="button select_candle"
+                  data-feature="fourth_candle"
+                >
+                  4th Candle
+                </button>
+              </div>
+              <!-- TODO: add candle image -->
+              <div id="candle"></div>
+              <!-- TODO: add all feature image layers -->
+
+              <!-- TODO if time: make template for candle 1-4 -->
+
+              <!-- Candle one -->
+              <img
+                src="features_new/aries_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                id="aries1"
+                data-feature="aries"
+              />
+              <img
+                src="features_new/cancer_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="cancer"
+                id="cancer1"
+              />
+              <img
+                src="features_new/gemini_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="gemini"
+                id="gemini1"
+              />
+              <img
+                src="features_new/leo_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="leo"
+                id="leo1"
+              />
+              <img
+                src="features_new/capricorn_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="capricorn"
+                id="capricorn1"
+              />
+              <img
+                src="features_new/aquarius_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="aquarius"
+                id="aquarius1"
+              />
+              <img
+                src="features_new/libra_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="libra"
+                id="libra1"
+              />
+              <img
+                src="features_new/pices_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="pices"
+                id="pices1"
+              />
+              <img
+                src="features_new/sagittarius_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="sagittarius"
+                id="sagittarius1"
+              />
+              <img
+                src="features_new/scorpio_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="scorpio"
+                id="scorpio1"
+              />
+              <img
+                src="features_new/taurus_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="taurus"
+                id="taurus1"
+              />
+              <img
+                src="features_new/virgo_light1.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="virgo"
+                id="virgo1"
+              />
+
+              <!-- Candle two -->
+              <img
+                src="features_new/aries_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                id="aries2"
+                data-feature="aries2"
+              />
+              <img
+                src="features_new/cancer_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="cancer2"
+                id="cancer2"
+              />
+              <img
+                src="features_new/gemini_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="gemini2"
+                id="gemini2"
+              />
+              <img
+                src="features_new/leo_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="leo2"
+                id="leo2"
+              />
+              <img
+                src="features_new/capricorn_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="capricorn2"
+                id="capricorn2"
+              />
+              <img
+                src="features_new/aquarius_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="aquarius2"
+                id="aquarius2"
+              />
+              <img
+                src="features_new/libra_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="libra2"
+                id="libra2"
+              />
+              <img
+                src="features_new/pices_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="pices2"
+                id="pices2"
+              />
+              <img
+                src="features_new/sagittarius_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="sagittarius2"
+                id="sagittarius2"
+              />
+              <img
+                src="features_new/scorpio_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="scorpio2"
+                id="scorpio2"
+              />
+              <img
+                src="features_new/taurus_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="taurus2"
+                id="taurus2"
+              />
+              <img
+                src="features_new/virgo_light2.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="virgo2"
+                id="virgo2"
+              />
+
+              <!-- Candle three -->
+              <img
+                src="features_new/aries_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                id="aries3"
+                data-feature="aries3"
+              />
+              <img
+                src="features_new/cancer_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="cancer3"
+                id="cancer3"
+              />
+              <img
+                src="features_new/gemini_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="gemini3"
+                id="gemini3"
+              />
+              <img
+                src="features_new/leo_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="leo3"
+                id="leo3"
+              />
+              <img
+                src="features_new/capricorn_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="capricorn3"
+                id="capricorn3"
+              />
+              <img
+                src="features_new/aquarius_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="aquarius3"
+                id="aquarius3"
+              />
+              <img
+                src="features_new/libra_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="libra3"
+                id="libra3"
+              />
+              <img
+                src="features_new/pices_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="pices3"
+                id="pices3"
+              />
+              <img
+                src="features_new/sagittarius_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="sagittarius3"
+                id="sagittarius3"
+              />
+              <img
+                src="features_new/scorpio_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="scorpio3"
+                id="scorpio3"
+              />
+              <img
+                src="features_new/taurus_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="taurus3"
+                id="taurus3"
+              />
+              <img
+                src="features_new/virgo_light3.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="virgo3"
+                id="virgo3"
+              />
+
+              <!-- Candle four -->
+              <img
+                src="features_new/aquarius_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="aquarius4"
+                id="aquarius4"
+              />
+              <img
+                src="features_new/aries_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                id="aries4"
+                data-feature="aries4"
+              />
+              <img
+                src="features_new/cancer_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="cancer4"
+                id="cancer4"
+              />
+              <img
+                src="features_new/capricorn_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="capricorn4"
+                id="capricorn4"
+              />
+              <img
+                src="features_new/gemini_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="gemini4"
+                id="gemini4"
+              />
+              <img
+                src="features_new/leo_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="leo4"
+                id="leo4"
+              />
+              <img
+                src="features_new/libra_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="libra4"
+                id="libra4"
+              />
+              <img
+                src="features_new/pices_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="pices4"
+                id="pices4"
+              />
+              <img
+                src="features_new/sagittarius_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="sagittarius4"
+                id="sagittarius4"
+              />
+              <img
+                src="features_new/scorpio_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="scorpio4"
+                id="scorpio4"
+              />
+              <img
+                src="features_new/taurus_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="taurus4"
+                id="taurus4"
+              />
+              <img
+                src="features_new/virgo_light4.png"
+                alt=""
+                class="hide zodiac_feature"
+                data-feature="virgo4"
+                id="virgo4"
+              />
+              <div id="selected_fragrances">
+                <h3 id="candle1"></h3>
+                <h3 id="candle2"></h3>
+                <h3 id="candle3"></h3>
+                <h3 id="candle4"></h3>
+              </div>
+            </div>
+          </div>
+          <div id="options">
+            <div class="configurator_description">
+              <div class="configurator_name">
+                <h1>Astro Candle</h1>
+                <h2>499,-</h2>
+              </div>
+              <p>
+                Your new personalized candle with your zodiac sign. <br />
+                Choose quantity, zodiac signs, fragrance and colors
+              </p>
+            </div>
+
+            <div id="options_together">
+              <div id="options_zodiac">
+                <button id="button_zodiac" class="buttons">
+                  <div class="button_number number1">1</div>
+                  ── CHOOSE ZODIAC SIGN
+                </button>
+                <!-- zodiac options for candle 1-->
+                <div id="option_zodiac_choises" class="hide">
+                  <ul id="first_zodiac_label" class="hide">
+                    <div class="first_section">
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="aries"
+                      >
+                        ARIES
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="cancer"
+                      >
+                        CANCER
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="gemini"
+                      >
+                        GEMINI
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="leo"
+                      >
+                        LEO
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="taurus"
+                      >
+                        TAURUS
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="aquarius"
+                      >
+                        AQUARIUS
+                      </a>
+                    </div>
+                    <div class="second_section">
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="libra"
+                      >
+                        LIBRA
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="pices"
+                      >
+                        PISCES
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="sagittarius"
+                      >
+                        SAGITTARIUS
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="scorpio"
+                      >
+                        SCORPIO
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="virgo"
+                      >
+                        VIRGO
+                      </a>
+                      <a
+                        class="option_zodiac option_first_candle"
+                        data-feature="capricorn"
+                        >CAPRICORN</a
+                      >
+                    </div>
+                  </ul>
+                  <ul id="second_zodiac_label" class="hide">
+                    <!-- zodiac options for candle 2-->
+                    <div class="first_section">
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="aries2"
+                      >
+                        ARIES
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="cancer2"
+                      >
+                        CANCER
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="gemini2"
+                      >
+                        GEMINI
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="leo2"
+                      >
+                        LEO
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="taurus2"
+                      >
+                        TAURUS
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="aquarius2"
+                      >
+                        AQUARIUS
+                      </a>
+                    </div>
+                    <div class="second_section">
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="libra2"
+                      >
+                        LIBRA
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="pices2"
+                      >
+                        PISCES
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="sagittarius2"
+                      >
+                        SAGITTARIUS
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="scorpio2"
+                      >
+                        SCORPIO
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="virgo2"
+                      >
+                        VIRGO
+                      </a>
+                      <a
+                        class="option_zodiac option_second_candle"
+                        data-feature="capricorn2"
+                        >CAPRICORN</a
+                      >
+                    </div>
+                  </ul>
+                  <ul id="third_zodiac_label" class="hide">
+                    <!-- zodiac options for candle 3 -->
+                    <div class="first_section">
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="aries3"
+                      >
+                        ARIES
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="cancer3"
+                      >
+                        CANCER
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="gemini3"
+                      >
+                        GEMINI
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="leo3"
+                      >
+                        LEO
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="taurus3"
+                      >
+                        TAURUS
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="aquarius3"
+                      >
+                        AQUARIUS
+                      </a>
+                    </div>
+                    <div class="second_section">
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="libra3"
+                      >
+                        LIBRA
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="pices3"
+                      >
+                        PISCES
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="sagittarius3"
+                      >
+                        SAGITTARIUS
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="scorpio3"
+                      >
+                        SCORPIO
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="virgo3"
+                      >
+                        VIRGO
+                      </a>
+                      <a
+                        class="option_zodiac option_third_candle"
+                        data-feature="capricorn3"
+                        >CAPRICORN</a
+                      >
+                    </div>
+                  </ul>
+                  <ul id="fourth_zodiac_label" class="hide">
+                    <!-- zodiac options for candle 4-->
+                    <div class="first_section">
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="aries4"
+                      >
+                        ARIES
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="cancer4"
+                      >
+                        CANCER
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="gemini4"
+                      >
+                        GEMINI
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="leo4"
+                      >
+                        LEO
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="taurus4"
+                      >
+                        TAURUS
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="aquarius4"
+                      >
+                        AQUARIUS
+                      </a>
+                    </div>
+                    <div class="second_section">
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="libra4"
+                      >
+                        LIBRA
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="pices4"
+                      >
+                        PISCES
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="sagittarius4"
+                      >
+                        SAGITTARIUS
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="scorpio4"
+                      >
+                        SCORPIO
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="virgo4"
+                      >
+                        VIRGO
+                      </a>
+                      <a
+                        class="option_zodiac option_fourth_candle"
+                        data-feature="capricorn4"
+                        >CAPRICORN</a
+                      >
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="options_fragrance">
+                <button id="button_fragrance" class="buttons">
+                  <div class="button_number number2">2</div>
+                  ── CHOOSE FRAGRANCE
+                </button>
+                <div id="option_fragrance_choises" class="hide">
+                  <a
+                    class="option_fragrance leo_fragrance"
+                    data-feature="test"
+                    id="fragrance1"
+                  >
+                    TEST
+                  </a>
+                  <a
+                    class="option_fragrance leo_fragrance"
+                    data-feature="test"
+                    id="fragrance2"
+                  >
+                    TEST
+                  </a>
+                  <a
+                    class="option_fragrance leo_fragrance"
+                    data-feature="test"
+                    id="fragrance3"
+                  >
+                    TEST
+                  </a>
+                </div>
+              </div>
+
+              <div id="color_btns">
+                <button id="button_color" class="buttons">
+                  <div class="button_number number3">3</div>
+                  ── CHOOSE THE COLOR
+                </button>
+                <div id="option_color_choises" class="hide">
+                  <svg viewBox="0 0 1000 300">
+                    <rect
+                      class="color_btn color1"
+                      width="100"
+                      height="100"
+                    ></rect>
+                    <rect
+                      class="color_btn color2"
+                      x="110"
+                      width="100"
+                      height="100"
+                    ></rect>
+                    <rect
+                      class="color_btn color3"
+                      x="220"
+                      width="100"
+                      height="100"
+                    ></rect>
+                    <rect
+                      class="color_btn color4"
+                      x="330"
+                      width="100"
+                      height="100"
+                      fill="#b9a992"
+                    ></rect>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="selected">
+      Selected features
+      <ul>
+      </ul>
+    </div> -->
+      </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", init);
+
+      function init() {
+        dropDownMenu();
+      }
+
+      /* navigation menu / burger menu */
+      function dropDownMenu() {
+        // JavaScript der styrer burgermenu
+        let burger = document.querySelector(".burger");
+        let nav = document.querySelector(".nav_links");
+
+        // Lytter efter click på burgermenu
+        burger.addEventListener("click", () => {
+          // Viser/skjuler menuen
+          nav.classList.toggle("nav_active");
+          // Tilføjer/fjerner animation på burgermenu
+          burger.classList.toggle("toggle");
+        });
+        // Lytter efter klik på logo, og går til forsiden
+        document.querySelector(".logo").addEventListener("click", () => {
+          location.href = "landing.html";
+        });
+      }
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
